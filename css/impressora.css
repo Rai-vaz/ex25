@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*ESTILO PARA IMPRESSORA*/
+
+body{
+    background-color: blanchedalmond;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    display: none;
+}
+
+article{
+    display: block;
+    margin: auto;
+    width: 500px;
+    text-indent: 20px;
+}
