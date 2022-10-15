@@ -16,9 +16,6 @@ header h1{
     padding: 10px;
 }
 
-header nav{
-    background-color: rgb(145, 152, 159);
-}
 
 nav{
     display: none;
@@ -31,6 +28,7 @@ ul{
 ul a{
     display: block;
     padding: 5px;
+    background-color: rgb(145, 152, 159);
     border-bottom: 2px solid gray;
     text-decoration: none;
     color: white;
@@ -49,7 +47,7 @@ main{
     padding: 20px;
     border: 1px solid gray;
     border-radius: 10px;
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.127);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.127);
 }
 
 span#menu{

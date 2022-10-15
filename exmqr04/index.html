@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <title>Menu Responsível</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">
@@ -42,11 +43,19 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sit perspiciatis amet dolorum similique ad dignissimos numquam praesentium esse aperiam, nisi possimus nihil laboriosam. Ipsam aliquid mollitia sapiente vero placeat.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id deleniti accusamus blanditiis totam rerum dolores aspernatur eaque quia deserunt hic voluptate cumque, minima in minus, tempora nostrum! Eveniet, sed minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolore, culpa nostrum, optio tempore quo eaque consectetur ipsam quibusdam inventore officiis in ratione modi sapiente repellendus tempora totam corrupti blanditiis.
             </p>
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                navegacao.style.display = 'block'
+            } else {
+                navegacao.style.display = 'none'
+            }
+        }
+
+
         function clickMenu() {
             if (navegacao.style.display == 'none') {
                 navegacao.style.display = 'block'
